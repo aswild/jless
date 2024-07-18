@@ -53,6 +53,7 @@ impl Default for Style {
     }
 }
 
+#[allow(unused)]
 pub trait Terminal: Write {
     fn clear_screen(&mut self) -> Result;
     fn clear_line(&mut self) -> Result;

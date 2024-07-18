@@ -748,7 +748,7 @@ impl App {
     }
 
     fn parse_command(command: &str) -> Command {
-        let args: Vec<&str> = command.split(" ").filter(|s| !s.is_empty()).collect();
+        let args: Vec<&str> = command.split(' ').filter(|s| !s.is_empty()).collect();
 
         match args.as_slice() {
             ["h" | "help"] => Command::Help,
